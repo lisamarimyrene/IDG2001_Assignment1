@@ -13,3 +13,6 @@ def get_contacts():
     return CONTACTS
 
 
+if __name__ == '__main__':
+    app.run()
+
