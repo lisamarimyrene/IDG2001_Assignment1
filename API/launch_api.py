@@ -4,6 +4,7 @@ import os
 
 # Set the flask app
 app = Flask(__name__)
+api = Api(app)
 
 
 # Homepage, find the form
