@@ -18,17 +18,19 @@ db = MongoEngine()
 # Put the app inside the database
 db.init_app(app)
 
-
+# Homepage, find the form
 @app.route('/')
 def home():
     return render_template('../Frontend/index.html')
 
+# Route when uploading file from form
 @app.route('/upload', methods=['POST'])
 def upload():
     file = request.files['file']
     file.save(file.filename)
     return 'File uploaded successfully!'
 
+# Just a standard if that is needed in every flask application
 if __name__ == '__main__':
     app.run(debug=True)
 
