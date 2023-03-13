@@ -1,3 +1,5 @@
+''' Nice tutorial: https://towardsdatascience.com/creating-restful-apis-using-flask-and-python-655bad51b24 ''' 
+
 # Flask, render_template, request
 from flask import Flask, render_template, request
 import os
