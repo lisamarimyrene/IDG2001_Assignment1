@@ -1,4 +1,5 @@
 ''' Dette er det Paul gjorde i lab 3 for å parse et vcard'''
+# Blir dette schema?
 
 # Import json
 import json
