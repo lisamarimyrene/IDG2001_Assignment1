@@ -5,7 +5,7 @@
 import json
 
 # Settings
-INPUT_NAME = 'sample.vcf' # Må endre til at input er den fila vi laster opp
+INPUT_NAME = 'vcard.vcf' # Må endre til at input er den fila vi laster opp
 OUTPUT_NAME = 'export.json' # Json outout fila vi får
 
 # Read vCard file
