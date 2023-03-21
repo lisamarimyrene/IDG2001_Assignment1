@@ -20,7 +20,7 @@ file), sends it to an API, parses it server-side and adds it to a database.
 
 
 # API 
-• POST to [Railway.app-uri]/contacts should accept a JSON structure which
+• POST to [Railway.app-uri]/contacts/ should accept a JSON structure which
 includes the vCard plaintext content, parse it, and add the values to the database. An
 integer __id should be added as key.
 
