@@ -1,6 +1,3 @@
-''' Nice tutorial: https://towardsdatascience.com/creating-restful-apis-using-flask-and-python-655bad51b24 ''' 
-
-# Flask, render_template, request
 from flask import Flask, render_template, request
 import json
 import html
@@ -10,6 +7,35 @@ import os
 app = Flask(__name__)
 api = Api(app)
 
+
+
+''' APIS '''
+
+# This is our API's
+# Test get
+@app.route('/', methid)
+def get_users():
+    user_id = request.args.get('id')
+    # implement code to retrieve and return user data
+    return jsonify(user)
+
+# Get
+@app.route('/api/users')
+def get_users():
+    user_id = request.args.get('id')
+    # implement code to retrieve and return user data
+    return jsonify(user)
+
+
+# Post
+@app.route('/api/users', methods=['POST'])
+def create_user():
+    user_data = request.json
+    # implement code to create and return user data
+    return jsonify(user)
+
+
+''' ROUTES '''
 
 # Homepage, find the form
 @app.route('/')
@@ -39,9 +65,12 @@ def resultUer():
     return # user
 
 
+
+
+
 # Just a standard if that is needed in every flask application
 if __name__ == '__main__':
     app.run(debug=True)
 
-
+# Run app
 app.run()
