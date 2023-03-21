@@ -11,7 +11,7 @@ app = Flask(__name__)
 client = MongoClient('mongodb+srv://idg2001:mongodbpassword@cluster0.luifcsb.mongodb.net/vCardDB')
 db = client.mydatabase
 
-
+#yoyoyo
 # Test GET
 
 # Hele greia er et Endpoint
